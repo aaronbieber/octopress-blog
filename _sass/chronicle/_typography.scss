@@ -1,0 +1,72 @@
+$sans-serif-font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+$serif-font-family: "Cardo", "Georgia", "Times New Roman", serif !default;
+$heading-font-family: $serif-font-family;
+$sans: $sans-serif-font-family;
+$serif: $serif-font-family;
+
+body > header h1 {
+  font-size: 2.8em;
+  font-family: $heading-font-family;
+  font-weight: 700;
+  line-height: 1.2em;
+  margin-bottom: 0.6667em;
+  text-align: center !important;
+}
+
+body > header h2 {
+  font-family: $heading-font-family;
+  text-align: center;
+}
+
+body {
+  line-height: 1.5em;
+  color: $text-color;
+  font-family: $serif-font-family;
+}
+
+h1 {
+  font-size: 2.2em;
+  line-height: 1.2em;
+}
+
+@media only screen and (min-width: 992px) {
+  body {
+    font-size: 1.15em;
+  }
+
+  h1 {
+    font-size: 2.6em;
+    line-height: 1.2em;
+  }
+}
+
+.heading {
+  text-rendering: optimizelegibility;
+  margin-bottom: 1em;
+  font-weight: bold;
+}
+
+h2, section h1 {
+  @extend .heading;
+  font-size: 1.5em;
+}
+
+h3, section h2, section section h1 {
+  @extend .heading;
+  font-size: 1.3em;
+}
+
+h4, section h3, section section h2, section section section h1 {
+  @extend .heading;
+  font-size: 1em;
+}
+
+h5, section h4, section section h3 {
+  @extend .heading;
+  font-size: .9em;
+}
+
+h6, section h5, section section h4, section section section h3 {
+  @extend .heading;
+  font-size: .8em;
+}

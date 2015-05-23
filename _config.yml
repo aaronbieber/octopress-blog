@@ -1,0 +1,12 @@
+# Site settings
+title: The Chronicle
+subtitle: of a ColdFusion Expatriate
+email: aaron@aaronbieber.com
+description: 
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://blog.aaronbieber.com" # the base hostname & protocol for your site
+twitter_username: aaronbieber
+github_username:  aaronbieber
+
+# Build settings
+markdown: kramdown
