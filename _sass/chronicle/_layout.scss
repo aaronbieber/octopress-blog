@@ -211,8 +211,8 @@ body > #nav_floater {
   position: relative;
   height: 45px;
   border: {
-    top: 1px solid $nav-border-top;
-    bottom: 1px solid $nav-border-bottom; }
+    bottom: 1px solid $nav-border-bottom;
+  }
 }
 
 body > #nav_floater > nav {
