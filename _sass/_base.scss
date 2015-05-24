@@ -111,6 +111,7 @@ code {
   @extend .mono;
   @include border-radius(4px);
   font-size: 0.8em;
+  line-height: 1.2em;
   color: $text-color;
   border: 1px solid $grey-color-light;
   background-color: #efefef;

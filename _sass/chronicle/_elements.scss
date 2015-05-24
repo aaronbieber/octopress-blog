@@ -5,3 +5,26 @@ $img-border: inline-image('dotted-border.png') !default;
   padding: 0 .4em 0 .2em;
   display: inline-block;
 }
+
+/* My awesome infobox. */
+.infobox {
+  border: 1px solid #aaa;
+  box-shadow: inset 0 1px 3px 0 #ddd;
+  -webkit-box-shadow: inset 0 1px 3px 0 #ddd;
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  padding: 0.5em;
+  margin-bottom: 1.5em;
+  p:last-child {
+    margin-bottom: 0px;
+  }
+
+  @media only screen and (min-width: 768px) {
+    &:before {
+      content: "\27A5";
+      position: absolute;
+      font-size: 2em;
+      left: 15px;
+    }
+  }
+}
