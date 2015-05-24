@@ -1,8 +1,15 @@
 $sans-serif-font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 $serif-font-family: "Cardo", "Georgia", "Times New Roman", serif !default;
+$mono-font-family: Menlo, Monaco, "Andale Mono", "lucida console", "Courier New", monospace !default;
 $heading-font-family: $serif-font-family;
 $sans: $sans-serif-font-family;
 $serif: $serif-font-family;
+$mono: $mono-font-family;
+
+/* @extend these to get proper serif treatments. */
+.sans { font-family: $sans; }
+.serif { font-family: $serif; }
+.mono { font-family: $mono; }
 
 body > header {
   h1 {
@@ -84,4 +91,13 @@ h5, section h4, section section h3 {
 h6, section h5, section section h4, section section section h3 {
   @extend .heading;
   font-size: .8em;
+}
+
+/* @extend this to force long lines of continuous text to wrap */
+.force-wrap {
+  white-space: -moz-pre-wrap;
+  white-space: -pre-wrap;
+  white-space: -o-pre-wrap;
+  white-space: pre-wrap;
+  word-wrap: break-word;
 }
