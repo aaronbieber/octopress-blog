@@ -7,19 +7,13 @@ Yes, my friends, it is true. After more than fifteen years using Vim, teaching
 Vim, proselytizing about Vim, all the while scoffing in the general direction of
 Emacs, I've seen the light. The light of Lisp... Or something.
 
-In this post, I am going to illustrate the high points of what is necessary to
-make Emacs behave so much like Vim you'll almost forget it's Emacs, except when
-it does something so awesome you'll wonder why you didn't try it sooner (or
-something so frustrating it gives you reminiscent pangs of Vim).
+If, like me, you're curious enough to give Emacs a try, this post should help
+you get off the ground.
 
 It's taken me at least the fourteen days described in the title, but with my
 help it should only take you two or three. There are some things to get used to,
 some new paradigms, and you have to learn a bit of Lisp (Elisp, actually), but
-don't be afraid, it's not that hard.
-
-Is this just a phase that I'm going through? Will I get smothered in parentheses
-and return to Vim? Maybe. But for now, come with me, learn a little bit of Lisp,
-and have some fun.<!--more-->
+don't be afraid, it's not that hard.<!--more-->
 
 ## Step 1: Get Emacs ##
 
@@ -111,7 +105,7 @@ didn't create one for you:
 Open `~/.emacs` in your favorite editor and paste in this nonsense, which,
 sooner or later, will seem quite simple and obvious to you:
 
-``` cl
+```cl
 (require 'package)
  
 (add-to-list 'package-archives '("org" . "http://orgmode.org/elpa/"))
@@ -165,7 +159,7 @@ use one major mode at a time.
 Emacs packages may also provide "minor modes," of which you may load as many as
 you like. Examples of useful minor modes are "flycheck," which gives you syntax
 checking, or "projectile," which provides functions for working with
-source-controlle projects, or "magit," which gives you interactive git commands.
+source-controlled projects, or "magit," which gives you interactive git commands.
 {% endinfobox %}
 
 To tell Emacs to use `evil-mode` immediately upon opening in all buffers, you
@@ -215,20 +209,48 @@ anything like Vundle or Neobundle or Pathogen, all you need to do is call
 `package-install` on every package that isn't yet installed. This is easy to
 write in Elisp.
 
+There are several ways to do this, but the simplest seems to be [this Stack
+Overflow answer](http://stackoverflow.com/a/10095853/580206):
+
 ```cl
-(defvar required-packages '(evil-mode
-                            helm
-                            projectile)
-  "Packages that are required by my configuration.")
+(defun ensure-package-installed (&rest packages)
+  "Assure every package is installed, ask for installation if it’s not.
 
-(require 'cl-lib)
-(defun required-packages-installed-p ()
-  "Check if all required packages are installed."
-  (cl-every 'package-installed-p required-packages
-  )
+Return a list of installed packages or nil for every skipped package."
+  (mapcar
+   (lambda (package)
+     (if (package-installed-p package)
+         nil
+       (if (y-or-n-p (format "Package %s is missing. Install it? " package))
+           (package-install package)
+         package)))
+   packages))
 
-(cl-loop for package in required-packages
-         (unless (package-installed-p package)
-           (progn (message "Installing '%s'..." package)
-                  (package-install package))))
+;; Make sure to have downloaded archive description.
+(or (file-exists-p package-user-dir)
+    (package-refresh-contents))
+
+;; Assuming you wish to install "iedit" and "magit"
+(ensure-package-installed 'iedit 'magit)
+
+;; Activate installed packages
+(package-initialize)
 ```
+
+If you add this to your `~/.emacs`, simply starting Emacs will prompt you for
+any packages you wish to install that are not already installed. You can expand
+the call to `ensure-package-installed` quite easily, and Elisp cares not about
+spacing, so you can even organize it like:
+
+```cl
+(ensure-package-installed 'evil
+                          'projectile
+                          'magit)
+```
+
+## Congratulations ##
+
+If you've made it this far, you're probably ready to begin exploring on your
+own. I'll keep posting updates as I have time to collate my thoughts and
+experiences, or feel free to reach out with questions by using the commenting
+feature below.
