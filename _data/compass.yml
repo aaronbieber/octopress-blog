@@ -1,7 +1,7 @@
 ---
 require:
 - jekyll-compass
-project_path: "/Users/airborne/Blog3.0/."
+project_path: "/Users/airborne/Blog/."
 http_path: "/"
 css_dir: css
 sass_dir: _sass
