@@ -82,6 +82,12 @@ body {
       padding-right: $pad-wide;
     }
   }
+  > footer {
+    background: $img-border top left repeat-x;
+    display: block;
+    padding-top: 1em;
+    padding-bottom: 1em;
+  }
   div.pagination {
     @extend .group;
     margin-left: $pad-min;

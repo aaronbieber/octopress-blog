@@ -12,7 +12,7 @@ $base-line-height: 1.5;
 $spacing-unit:     30px;
 
 $text-color:       #111;
-$background-color: #fdfdfd;
+$background-color: white;
 $brand-color:      #2a7ae2;
 
 $grey-color:       #828282;
@@ -38,12 +38,8 @@ $on-laptop:        800px;
     }
 }
 
-// Import partials from `sass_dir` (defaults to `_sass`)
 @import "compass";
-//@import "compass/css3/border-radius";
-//@import "compass/css3/background-clip";
-//@import "compass/css3/box-shadow";
-//@import "compass/typography/lists/horizontal-list";
+@include global-reset;
 
 @import "utilities";
 @import "base";

@@ -1,5 +1,18 @@
-@import "colors";
-@import "typography";
-@import "layout";
+@import "colors";     // Color definitions only.
+@import "elements";   // Images, etc.
+@import "typography"; // Text configuration.
+@import "layout";     // Site-wide structure.
+
+// The top nav bar and contents.
 @import "navigation";
+
+// The right sidebar and contents.
 @import "sidebar";
+
+// Formatting for posts on the index and individual post pages.
+@import "article";
+
+// Formatting for the archive page.
+@import "archive";
+
+@import "bio";

@@ -1,0 +1,34 @@
+---
+layout: default
+---
+
+<div class="blog-archive">
+  <h1>Blog Archive</h1>
+
+  {% for post in site.posts %}
+  {% capture year %}{{ post.date | date: "%Y" }}{% endcapture %}
+  {% if last_year != year %}{% assign show_year = true %}{% else %}{% assign show_year = false %}{% endif %}
+
+  <div class="article-row">
+    <div class="meta-year">
+      &nbsp;
+      {% if show_year %}{{ post.date | date: "%Y" }}{% endif %}
+    </div>
+
+    <article>
+      <div class="meta-date">
+        {{ post.date | date: "%b %d" }}
+      </div>
+      <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+      {% capture tags %}{{ post.tags | join: ", " }}{% endcapture %}
+      {% if tags != "" %}
+      <p class="tags">Tagged {{ tags }}</p>
+      {% endif %}
+    </article>
+  </div>
+
+  {% assign last_year = year %}
+  {% endfor %}
+</div>
+
+{% include sidebar.html %}

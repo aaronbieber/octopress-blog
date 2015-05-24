@@ -1,6 +1,11 @@
 # Site settings
+name: The Chronicle of a ColdFusion Expatriate
 title: The Chronicle
 subtitle: of a ColdFusion Expatriate
+author: Aaron Bieber
+bio: >
+  Hi, I'm Aaron Bieber. Once, long ago, I wrote ColdFusion for a living. Now I
+  write mostly PHP and I work for Wayfair in Boston.
 email: aaron@aaronbieber.com
 description: 
 baseurl: "" # the subpath of your site, e.g. /blog/
@@ -10,9 +15,12 @@ github_username:  aaronbieber
 paginate: 5
 excerpt_separator: <!--more-->
 recent_posts: 5
+date_format_short: "%B %d, %Y"
+date_format_long: "%B %d, %Y"
+disqus_short_name: aaronbieber
 
 # Build settings
-markdown: kramdown
+markdown: redcarpet
 
 gems:
   - jekyll-compass

@@ -1,7 +1,7 @@
-<ul class="subscription" data-subscription="rss{% if site.subscribe_email %} email{% endif %}">
-  <li><a href="{{ site.subscribe_rss }}" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+<ul class="subscription" data-subscription="rss">
+  <li><a href="/feed.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
 </ul>
-<form action="{{ site.simple_search }}" method="get">
+<form action="https://www.google.com/search" method="get">
   <fieldset role="search">
     <input type="hidden" name="q" value="site:{{ site.url | shorthand_url }}" />
     <input class="search" type="text" name="q" results="0" placeholder="Search"/>
@@ -9,7 +9,7 @@
 </form>
 <ul class="main-navigation">
   <li><a href="{{ root_url }}/">Home</a></li>
-  <li><a href="{{ root_url }}/b/archives">Archives</a></li>
+  <li><a href="{{ root_url }}/archive.html">Archives</a></li>
 </ul>
 
 <h2 style="display: none;"><a href="/">The Chronicle</a></h2>
