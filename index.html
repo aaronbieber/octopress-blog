@@ -21,12 +21,14 @@ layout: default
 
   <div class="pagination">
     {% if paginator.next_page %}
-      <a class="prev" href="{{paginator.next_page_path}}">&larr; Older</a>
+      <a class="prev basic-alignment left" href="{{paginator.next_page_path}}">&larr; Older</a>
     {% endif %}
-    <a href="/archive.html">Blog Archives</a>
+
     {% if paginator.previous_page %}
-    <a class="next" href="{{paginator.previous_page_path}}">Newer &rarr;</a>
+      <a class="next basic-alignment right" href="{{paginator.previous_page_path}}">Newer &rarr;</a>
     {% endif %}
+
+    <a class="basic-alignment center center-text" href="/archive.html">Blog Archives</a>
   </div>
 </div>
 

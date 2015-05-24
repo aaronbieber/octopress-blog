@@ -1,5 +1,5 @@
 ---
-title: Rbenv For the Win"
+title: Rbenv For the Win
 layout: post
 date: 2013-03-08 10:34
 comments: true
@@ -8,6 +8,7 @@ categories:
     - howto
     - linux
 ---
+
 I'm sure that this is not news to many of you, but rbenv is awesome. Because I 
 faced some challenges along the way while setting up this Octopress blog 
 environment and have now gone through the motions on both my Mac laptop and 

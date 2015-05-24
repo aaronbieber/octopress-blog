@@ -1,10 +1,6 @@
 ---
-layout: post
 title: "Do You Have Any Questions For Me?"
-date: 2015-03-29 17:47:48 -0400
-comments: true
-categories: interviewing
-published: false
+layout: post
 ---
 
 All interviews are two-sided; a company is looking for a person to fill a

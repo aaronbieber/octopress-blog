@@ -60,6 +60,21 @@ a {
   @include link-colors($link-color, $hover: $link-color-hover, $focus: $link-color-hover, $visited: $link-color-visited, $active: $link-color-active);
 }
 
+.blog-index article {
+  margin-bottom: 3em;
+  &:before {
+    color: lighten($text-color, 40);
+    content: "\2726";
+    position: absolute;
+    left: 50%;
+    height: 1em;
+    margin-top: -2.5em;
+  }
+  &:first-child:before {
+    content: ""
+  }
+}
+
 body {
   -webkit-text-size-adjust: none;
   max-width: $max-width;
@@ -89,20 +104,21 @@ body {
     padding-bottom: 1em;
   }
   div.pagination {
+    width: 100%;
     @extend .group;
-    margin-left: $pad-min;
-    margin-right: $pad-min;
+    padding-left: $pad-min;
+    padding-right: $pad-min;
     @media only screen and (min-width: 480px) {
-      margin-left: $pad-narrow;
-      margin-right: $pad-narrow;
+      padding-left: $pad-narrow;
+      padding-right: $pad-narrow;
     }
     @media only screen and (min-width: 768px) {
-      margin-left: $pad-medium;
-      margin-right: $pad-medium;
+      padding-left: $pad-medium;
+      padding-right: $pad-medium;
     }
     @media only screen and (min-width: 992px) {
-      margin-left: $pad-wide;
-      margin-right: $pad-wide;
+      padding-left: $pad-wide;
+      padding-right: $pad-wide;
     }
   }
   > header {

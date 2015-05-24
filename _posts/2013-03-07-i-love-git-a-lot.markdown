@@ -53,7 +53,7 @@ but the really magical part is this little bash script called `linkall`.
 
 It's so short, I'll show you the whole thing right here:
 
-``` bash linkall https://github.com/aaronbieber/dotfiles/blob/master/linkall
+``` bash
 #!/bin/bash
 
 # Get options.

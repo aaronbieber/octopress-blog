@@ -1,12 +1,7 @@
 ---
 title: As Promised, Vim Musings
-author: Aaron
 layout: post
-comments: true
-permalink: /2013/02/21/as-promised-vim-musings/
-tags:
-  - links
-  - vim
+tags: vim
 ---
 I love Vim, I really do. Having used Vim for about 12 years or so, I feel 
 really comfortable with it. Remarkably, I keep learning new things about it, 

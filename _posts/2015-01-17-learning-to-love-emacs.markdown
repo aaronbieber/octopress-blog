@@ -1,7 +1,7 @@
 ---
 title: Learning to Love Emacs
 layout: post
-date: 2015-01-11 15:31:51 -0500
+date: 2015-01-17 15:31:51 -0500
 comments: true
 tags: vim emacs
 ---

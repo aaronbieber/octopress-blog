@@ -14,23 +14,15 @@ services, you may enjoy reading on.<!--more-->
 As you can see from the simple feature grid below, the services are very 
 similar on their face:
 
-|---
-| Feature | Cloud Player | Google Play
-|-|-|-
-| Upload your own music | Up to 250 tracks free | Up to 20,000 tracks free
-|---
-| Match online library | Yes | Yes
-|---
-| Play in web browser | Yes | Yes
-|---
-| Play on Android/iPhone | Yes | Yes
-|---
-| Play on Sonos speakers | Yes | No
-|---
-| Download tracks | Yes | Yes
-|---
-| Upload automatically | Yes | Yes
-|---
+| Feature                | Cloud Player          | Google Play              |
+|------------------------+-----------------------+--------------------------|
+| Upload your own music  | Up to 250 tracks free | Up to 20,000 tracks free |
+| Match online library   | Yes                   | Yes                      |
+| Play in web browser    | Yes                   | Yes                      |
+| Play on Android/iPhone | Yes                   | Yes                      |
+| Play on Sonos speakers | Yes                   | No                       |
+| Download tracks        | Yes                   | Yes                      |
+| Upload automatically   | Yes                   | Yes                      |
 
 So let's get into the details. First things first: why would you want to use 
 one of these services anyway? I'm sure that the reasons may be different for 

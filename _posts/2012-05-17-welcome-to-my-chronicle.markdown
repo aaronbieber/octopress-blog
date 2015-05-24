@@ -1,12 +1,7 @@
 ---
 title: Welcome to My Chronicle
-author: Aaron
 layout: post
-comments: true
-permalink: /2012/05/17/welcome-to-my-chronicle/
-tags:
-  - php
-  - vim
+tags: php vim
 ---
 I’ll try to keep this brief. Five years ago, I left my job as a production PHP 
 programmer at a national consulting firm (business consulting, not development 
@@ -26,7 +21,8 @@ out, a lot has changed in PHP since I left my previous position.
 This blog will be a chronicle of my discoveries, solutions to odd problems, 
 and probably also an outpouring of affection for Vim, my favorite editor.
 
-``` php PHP is a popular language.
+```php
+<?php
 public function __construct() {
     try_to_enjoy_yourselves();
 }
@@ -34,7 +30,7 @@ public function __construct() {
 
 I may also talk about bash scripting, because bash is cool. Here’s a freebie.
 
-``` bash But bash is sometimes more useful.
+```bash
 function ll() {
     ls -G -lho "$@";
 }

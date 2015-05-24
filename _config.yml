@@ -19,8 +19,18 @@ date_format_short: "%B %d, %Y"
 date_format_long: "%B %d, %Y"
 disqus_short_name: aaronbieber
 
+defaults:
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "default"
+
 # Build settings
 markdown: redcarpet
+redcarpet:
+  extensions: ["no_intra_emphasis", "fenced_code_blocks", "autolink", "tables", "with_toc_data"]
 
 gems:
   - jekyll-compass

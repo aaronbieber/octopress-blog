@@ -19,8 +19,8 @@ article {
       margin: 0;
       font-weight: 500;
       a {
-          text-decoration: none;
-          &:hover { text-decoration: underline; }
+        text-decoration: none;
+        &:hover { text-decoration: underline; }
       }
     }
     p {
@@ -42,22 +42,58 @@ article {
     padding-top: 0.8em;
     background: $img-border top left repeat-x;
   }
-  .entry-content a {
-    @include border-radius(4px);
-    @include transition(background-color .3s, padding .3s);
-    &:hover {
-      background-color: #dedede;
-      padding: 0 0.3em 0;
+  .entry-content {
+    a {
+      @include border-radius(4px);
+      @include transition(background-color .3s, padding .3s);
+      &:hover {
+        background-color: #dedede;
+        padding: 0 0.3em 0;
+      }
     }
-  }
-  .entry-content ol,
-  .entry-content ul {
-    margin-left: 3em;
-    li {
-      margin-bottom: .7em;
+
+    ol {
+      list-style: decimal;
     }
-    li:last-child {
-      margin-bottom: 0;
+
+    ul {
+      list-style: disc;
+    }
+
+    ol, ul {
+      margin-left: 3em;
+
+      li {
+        margin-bottom: .7em;
+      }
+
+      li:last-child {
+        margin-bottom: 0;
+      }
+    }
+
+    table {
+      border-spacing: 0;
+      border-collapse: separate;
+      margin-top: 1em;
+      margin-bottom: 2em;
+      tr th {
+        font-weight: bold;
+        border-right: 1px solid lighten($text-color, 50);
+        border-bottom: 2px solid lighten($text-color, 50);
+        padding: 0.2em;
+        &:last-child {
+          border-right: none;
+        }
+      }
+      tr td {
+        border-right: 1px solid lighten($text-color, 50);
+        border-bottom: 1px solid lighten($text-color, 50);
+        padding: 0.2em;
+        &:last-child {
+          border-right: none;
+        }
+      }
     }
   }
   .entry-content & h2:first-child, header + h2 { padding-top: 0; }

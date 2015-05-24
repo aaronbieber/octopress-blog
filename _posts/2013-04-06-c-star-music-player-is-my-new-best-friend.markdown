@@ -23,7 +23,7 @@ theme that now ships along with it (finally).
 You might be thinking, "Ugh, a terminal-based music player? How limiting." Not 
 so. What if I told you that you could have global keyboard shortcuts and Growl 
 notifications? Well, you can (at least in OS X). I'll tell you how.
-<!-- more -->
+<!--more-->
 
 _Full disclosure_: in order to get global hotkeys working in OS X, you need 
 the Alfred Powerpack, which is not free. Alfred is an amazing launcher 
@@ -44,7 +44,7 @@ Even in OS X there are probably other ways, such as Quicksilver. What you need
 is the ability to bind a global keyboard shortcut to a _terminal script 
 execution_, or a command, to put it simply.
 
-### Yay, sockets!
+## Yay, sockets!
 
 `cmus`, by default, starts listening for remote control commands on a *UNIX 
 socket* called, appropriately, `~/.cmus/socket`. UNIX sockets are awesome, 
