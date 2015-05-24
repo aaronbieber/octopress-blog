@@ -57,7 +57,7 @@ body > #nav_floater > nav {
       }
     }
   }
-  fieldset[role=search]{ float: right; width: 48%; }
+  fieldset[role=search]{ float: right; width: 48%; border: none; }
   fieldset.mobile-nav{ float: left; width: 48%;
     select{ width: 100%; font-size: .8em; border: 1px solid #888;}
   }
