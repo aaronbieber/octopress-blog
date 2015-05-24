@@ -16,7 +16,7 @@ single: true
       </p>
     </header>
 
-    <div class="entry-content">{{ content }}</div>
+    <div class="entry-content">{{ content | replace: '<!--more-->', '' }}</div>
 
     <footer>
       <p class="meta">
