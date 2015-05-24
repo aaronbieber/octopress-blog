@@ -132,8 +132,6 @@ article {
   }
   > footer {
     @include border-radius(5px);
-    background-color: darken($background-color, 5);
-    padding: 1em;
     margin-top: 2em;
     p.meta {
       margin-bottom: .8em;

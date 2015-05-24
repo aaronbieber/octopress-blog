@@ -60,6 +60,11 @@ a {
   @include link-colors($link-color, $hover: $link-color-hover, $focus: $link-color-hover, $visited: $link-color-visited, $active: $link-color-active);
 }
 
+.blog-post article footer {
+  background-color: darken($background-color, 5);
+  padding: 1em;
+}
+
 .blog-index article {
   margin-bottom: 3em;
   &:before {
