@@ -1,5 +1,6 @@
 ---
 title: From Vim to Emacs in Fourteen Days
+date: 2015-05-24T17:04:07-04:00
 layout: post
 ---
 
