@@ -5,13 +5,3 @@ $img-border: inline-image('dotted-border.png') !default;
   padding: 0 .4em 0 .2em;
   display: inline-block;
 }
-
-.follow {
-  position: fixed !important;
-  width: 100%;
-  top: 0;
-  left: 0;
-  border-bottom: 1px solid #ccc !important;
-  box-shadow: 0 5px 5px 0 rgba(150, 150, 150, 0.5);
-  z-index: 1000;
-}

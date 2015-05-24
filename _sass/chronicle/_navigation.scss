@@ -5,6 +5,9 @@ body > #nav_floater {
   border: {
     bottom: 1px solid $nav-border-bottom;
   }
+  h2 {
+    display: none;
+  }
 }
 
 #nav_floater ul {
@@ -35,7 +38,8 @@ body > #nav_floater > nav {
   }
   form {
     @include background-clip(padding-box);
-    margin: 0; padding: 0;
+    margin: 4px 0 0 0;
+    padding: 0;
     .search {
       padding: .3em .5em .1em;
       font-size: .85em;
@@ -159,4 +163,20 @@ body > #nav_floater > nav {
   ul.subscription { position: relative; top: .2em; li, a { border: 0; padding: 0; }}
   a[rel=subscribe-rss]{ @include mask-subscription-nav('rss.png'); }
   a[rel=subscribe-email]{ @include mask-subscription-nav('email.png'); }
+}
+
+body > #nav_floater.follow {
+  position: fixed !important;
+  width: 100%;
+  top: 0;
+  left: 0;
+  border-bottom: 1px solid #ccc !important;
+  box-shadow: 0 5px 5px 0 rgba(150, 150, 150, 0.5);
+  z-index: 1000;
+
+  h2 {
+    @media only screen and (min-width: 550px) {
+      display: block;
+    }
+  }
 }

@@ -14,13 +14,13 @@ $(function() {
         // in case a media query has changed it.
         nav_top_original = $(nav_bar).offset().top;
         $(nav_bar).addClass('follow');
-        $(nav_bar).find('h2').show();
+        $('body').css({ paddingTop: nav_location.height + 'px' });
       }
     } else if(  $(nav_bar).hasClass('follow')
              && $(window).scrollTop() < nav_top_original
     ) {
       $(nav_bar).removeClass('follow');
-      $(nav_bar).find('h2').hide();
+      $('body').css({ paddingTop: 0 });
     }
   });
 });
