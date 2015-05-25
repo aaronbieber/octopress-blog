@@ -7,7 +7,7 @@ bio: >
   Hi, I'm Aaron Bieber. Once, long ago, I wrote ColdFusion for a living. Now I
   write mostly PHP and I work for Wayfair in Boston.
 email: aaron@aaronbieber.com
-description: 
+description:
 baseurl: "/" # the subpath of your site, e.g. /blog/
 url: "http://blog.aaronbieber.com" # the base hostname & protocol for your site
 twitter_username: aaronbieber
@@ -18,6 +18,7 @@ recent_posts: 5
 date_format_short: "%B %d, %Y"
 date_format_long: "%B %d, %Y"
 disqus_short_name: aaronbieber
+highlighter: rouge
 
 defaults:
   -
@@ -27,12 +28,13 @@ defaults:
     values:
       layout: "default"
 
-# Build settings
+# Application settings
 markdown: redcarpet
 redcarpet:
   extensions: ["no_intra_emphasis", "fenced_code_blocks", "autolink", "tables", "with_toc_data"]
 
 gems:
+  - rouge
   - jekyll-compass
 
 sass:
