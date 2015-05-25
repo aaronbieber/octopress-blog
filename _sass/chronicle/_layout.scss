@@ -145,6 +145,21 @@ aside.sidebar {
   @extend .group;
 }
 
+div.highlight {
+  pre {
+    white-space: pre;
+    word-wrap: normal;
+    overflow-x: scroll;
+    margin-bottom: 0;
+    code {
+      white-space: pre;
+      * {
+        white-space: pre;
+      }
+    }
+  }
+}
+
 .flex-content { max-width: 100%; height: auto; }
 
 .basic-alignment {
