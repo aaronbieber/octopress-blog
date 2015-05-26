@@ -1,7 +1,22 @@
 ---
 layout: post
-title: "Don't Let PHP Typecast You"
+title: "Don't Be Typecast By PHP"
 ---
+
+When I tell people I meet that I am a PHP developer, it's not too unusual for
+them to scoff or even laugh. In spite of PHP's enormous popularity, its
+unflinching support by the unstoppable Facebook engineering machine, and its
+continuous and impressive improvement as a language year after year, many people
+in the software industry are openly derisive toward PHP.
+
+Don't let PHP's own reputation sully yours; don't let PHP itself typecast you.
+
+> In television, film, and theatre, typecasting is the process by which a
+> particular actor becomes strongly identified with a specific character; one or
+> more particular roles; or, characters having the same traits or coming from
+> the same social or ethnic groups.
+>
+> [Wikipedia, "Typecasting (Acting)"](http://en.wikipedia.org/wiki/Typecasting_(acting))
 
 Unlike most other languages used on the Internet, PHP enjoys an incredibly broad
 appeal. Although broad appeal is generally a good thing, the statement "I am a
