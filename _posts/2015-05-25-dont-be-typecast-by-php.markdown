@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Don't Be Typecast By PHP"
+date: 2015-05-25T21:58:17-04:00
 ---
 
 When I tell people I meet that I am a PHP developer, it's not too unusual for
