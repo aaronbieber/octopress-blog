@@ -18,21 +18,61 @@ Don't let PHP's own reputation sully yours; don't let PHP itself typecast you.
 >
 > [Wikipedia, "Typecasting (Acting)"](http://en.wikipedia.org/wiki/Typecasting_(acting))
 
-Unlike most other languages used on the Internet, PHP enjoys an incredibly broad
-appeal. Although broad appeal is generally a good thing, the statement "I am a
-PHP developer" is now meaningless. What does it mean to be a "PHP developer?" To
-say that you work primarily in PHP, on its face, is like saying that you drive a
-vehicle for a living.
+You are more than the language you use, or even prefer. Moreover, the language
+you use usually has very little to do with your success as an engineer, or even
+the success of any business using it. Let me give you some advice.<!--more-->
 
-Postal workers, couriers, cab drivers, F1 race car drivers, long-haul truckers,
-even perhaps forklift operators could be considered to drive a vehicle for a
-living. To say that you drive a vehicle for a living is nearly meaningless, and
-I believe that identifying yourself as someone who uses PHP is exactly the same.
+First, PHP is not a bad language. It's a quirky language to be sure, but all
+languages have quirks. The last few minor versions of PHP have dramatically
+increased its capabilities, elegance, and performance, and the next major
+version is positioned to make further leaps in all of those categories.
 
-PHP is used by WordPress, Drupal, Magento, and many other open- and
-closed-source systems that are wildly popular. Many make a living building
-systems around these products or extending them. At the same time, a huge number
-of bespoke applications are using PHP because it's easy to set up, free, and
-talent is relatively easy to find to support it.
+I have had a twisted love affair with PHP for over 15 years; it wasn't the first
+language I learned (that was BASIC, followed by Perl), nor is it the language I
+like the most (which is probably Python at the moment), but it's still the first
+thing I reach for when I want to put something dynamic on the web.
 
-The thing is... Knowing PHP doesn't necessarily mean you're talented.
+The reason that the statement "I am a PHP developer" is broadly misunderstood is
+because it is _meaningless_.
+
+PHP is a victim of its own popularity. Kids fresh out of school writing
+WordPress plug-ins or tweaking Drupal configurations are calling themselves "PHP
+developers," and there are _thousands_ of them. The reality is that the majority
+of people who are reading and writing PHP on a daily basis, for money, wouldn't
+make it through the first ten minutes of a Facebook engineering interview. Hell,
+I probably wouldn't, either.
+
+If you are one of those people, I applaud you, especially if you love your
+work. Being paid to do something you love should be everyone's goal in life. My
+advice to you is: learn another language, too. Don't let PHP be the only window
+you have into the amazing world of computer science.
+
+However, if you are doing really impressive or complicated things with PHP, like
+scaling an e-commerce platform to over 2,500 impressions per second and over a
+billion dollars a year, I have different advice:
+
+1. Don't be ashamed of using PHP, but
+2. Don't let PHP _define_ your skills.
+
+I was in college in the early 2000s, and even though the "millennium bug" had
+already done whatever damage it was going to do, one of my computer science
+professors told me that he received constant phone calls asking whether he had
+students learning COBOL. If you were any good at COBOL between 1998 (when the
+"Year 2000 Information and Readiness Disclosure Act" was passed) and 2001 or
+so, you could literally write your own paycheck.
+
+For those folks, being a COBOL programmer defined their career, and probably
+secured their retirement as well.
+
+Now, with technology driving virtually every industry, and with software at the
+core of every business, there are no absolutes. The programming languages we
+learn help us to refine our pattern recognition and to advance our own awareness
+of the state of the art, but no single modern language is more or less equipped
+to make a successful _product_, in spite of all the anecdotal arguments to the
+contrary.
+
+So, the next time you're editing your resume, don't hesitate to mention that
+you're good at PHP, but make an effort to emphasize that you reach for the
+hammer with the handle that feels good in your hands; every hammer can drive a
+nail, but the carpenter is best with the tools he's most comfortable with. Don't
+let people think of you as just "a PHP programmer."
