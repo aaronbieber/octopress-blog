@@ -39,4 +39,4 @@ gems:
 
 sass:
   load_paths:
-    - "/Users/airborne/.rbenv/versions/1.9.3-p374/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/"
+    - "/Users/airborne/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/"
