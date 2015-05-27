@@ -1,0 +1,6 @@
+source 'https://rubygems.org'
+gem 'compass', '~>1.0.3'
+gem 'jekyll', '~>2.5.3'
+gem 'jekyll-compass', '~>1.2.0'
+gem 'octopress', '~>3.0.6'
+gem 'rouge', '~>1.9.0'
