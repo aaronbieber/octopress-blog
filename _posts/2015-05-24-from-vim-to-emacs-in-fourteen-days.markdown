@@ -231,11 +231,11 @@ Return a list of installed packages or nil for every skipped package."
 (or (file-exists-p package-user-dir)
     (package-refresh-contents))
 
-;; Assuming you wish to install "iedit" and "magit"
-(ensure-package-installed 'iedit 'magit)
-
 ;; Activate installed packages
 (package-initialize)
+
+;; Assuming you wish to install "iedit" and "magit"
+(ensure-package-installed 'iedit 'magit)
 ```
 
 If you add this to your `~/.emacs`, simply starting Emacs will prompt you for
