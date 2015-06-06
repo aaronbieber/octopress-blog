@@ -1,0 +1,36 @@
+---
+layout: post
+title: "Evil Mode"
+date: 2015-06-03T20:16:47-04:00
+---
+
+"Evil Mode, or, How I Learned to Stop Worrying and Love Emacs"
+
+That was the title of the talk that I gave at the 
+[Boston Vim Meetup](http://www.meetup.com/The-Boston-Vim-Meetup/) group. As you
+all may know, I was a Vim user for 15 years and I've been attending the Boston
+Vim meetups for quite a while, so this was an interesting experience for me.
+
+I think it might be an interesting experience for you, too, so I'm posting the
+video here so you can all enjoy it in the privacy of your own homes!
+
+<iframe width="100%" src="https://www.youtube.com/embed/JWD1Fpdd4Pc" frameborder="0" allowfullscreen></iframe>
+
+~~MORE~~
+
+The goal of this talk was to explore some of the features that the Vim user
+community at large seems to value (asynchronous operations, etc.) as
+demonstrated by the NeoVim project (a self-described "ambitious fork" of Vim),
+and how Emacs provides those features already.
+
+In the talk, I mention "Vim emulators" in an attempt to point out that even
+vehement Vim users are happy to use "Vim-like" interfaces in other programs
+because it is the modal approach and semantic key mappings that they love; not
+Vim the program itself.
+
+That was, admittedly, not a rigorous exploration of Vim's heritage, and may have
+given Vim more credit than it was due. In point of fact, interfaces such as bash
+or zsh's "vi mode" are emulating vi more than they are Vim.
+
+Nevertheless, these UI conventions are powerful, and Evil Mode brings them to
+you in as much completeness as I have seen anywhere outside of vi or Vim itself.
