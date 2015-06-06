@@ -13,7 +13,7 @@ url: "http://blog.aaronbieber.com" # the base hostname & protocol for your site
 twitter_username: aaronbieber
 github_username:  aaronbieber
 paginate: 5
-excerpt_separator: <!--more-->
+excerpt_separator: ~~MORE~~
 recent_posts: 5
 date_format_short: "%B %d, %Y"
 date_format_long: "%B %d, %Y"

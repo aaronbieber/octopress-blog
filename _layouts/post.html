@@ -16,7 +16,7 @@ single: true
       </p>
     </header>
 
-    <div class="entry-content">{{ content | replace: '&lt;!--more--&gt;', '' }}</div>
+    <div class="entry-content">{{ content | remove: '~~MORE~~' }}</div>
 
     <footer>
       <p class="meta">

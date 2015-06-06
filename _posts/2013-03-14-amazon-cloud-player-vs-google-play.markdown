@@ -9,7 +9,7 @@ Perhaps you've heard of Amazon's new Cloud Player and Google Play (previously
 Google Music), and perhaps you've used one or both of them. If you've already 
 formed your own opinion, it's unlikely that what I will say here will change 
 it, but if you're considering trying one of these (admittedly awesome) 
-services, you may enjoy reading on.<!--more-->
+services, you may enjoy reading on.~~MORE~~
 
 As you can see from the simple feature grid below, the services are very 
 similar on their face:

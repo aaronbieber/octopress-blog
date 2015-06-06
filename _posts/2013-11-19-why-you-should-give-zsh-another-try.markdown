@@ -21,7 +21,7 @@ my zsh," and I decided to dangle my toes into the waters of the Z shell and
 see what it's all about. After all, the OS X terminal drops you into zsh by 
 default; there must be something to it.
 
-I'm never going back.<!--more-->
+I'm never going back.~~MORE~~
 
 To begin, here are some specific reasons you should drop bash or tcsh or csh 
 and use the Z shell:

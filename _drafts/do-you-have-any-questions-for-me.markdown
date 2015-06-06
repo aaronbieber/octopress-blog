@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Do You Have Any Questions For Me?
+date: 2015-06-04T07:15:32-04:00
 ---
 
 All interviews are two-sided; a company is looking for a person to fill a
@@ -16,5 +17,5 @@ out if this could be the job of your dreams.
 I've interviewed countless software engineering candidates and I've been asked
 both great and not-so-great questions. I'm going to give you some suggestions
 that might help you find the right questions to ask to get the job of your
-dreams.<!--more-->
+dreams. ~~MORE~~
 

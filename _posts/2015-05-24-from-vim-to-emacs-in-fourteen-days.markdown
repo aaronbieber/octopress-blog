@@ -14,7 +14,7 @@ you get off the ground.
 It's taken me at least the fourteen days described in the title, but with my
 help it should only take you two or three. There are some things to get used to,
 some new paradigms, and you have to learn a bit of Lisp (Elisp, actually), but
-don't be afraid, it's not that hard.<!--more-->
+don't be afraid, it's not that hard.~~MORE~~
 
 ## Step 1: Get Emacs ##
 

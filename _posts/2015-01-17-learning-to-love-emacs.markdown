@@ -19,7 +19,7 @@ Still, it is true. I've been secretly using Emacs for the past few months,
 exclusively. I have told a few people at work and all of them, without
 exception, literally gasped. That's how broadly I had advertised my love of
 Vim. But it's time now to explain why I switched and why you should think about
-switching, too.<!--more-->
+switching, too.~~MORE~~
 
 ## Vim Is Awesome
 

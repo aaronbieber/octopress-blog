@@ -10,7 +10,7 @@ Vim's registers are incredibly powerful. You use them all the time when you
 yank and put text or record macros, but are you using CTRL-R (in insert 
 mode)? If you aren't, you're missing out on a huge efficiency boost! I will 
 show you what CTRL-R does and how it can make you faster and give you even 
-more uses for Vim's registers.<!--more-->
+more uses for Vim's registers.~~MORE~~
 
 From the Vim documentation:
 

@@ -8,7 +8,7 @@ categories:
 I can't believe how utterly, totally, fully, and completely I overlooked this. 
 I could add a few more adjectives to that list and it would still fail to 
 capture the magnitude of sustained neglect it required on my part not to 
-realize that this existed.<!--more-->
+realize that this existed.~~MORE~~
 
 OK, hold on, rewind about one month. I got a new MacBook Pro for work, which 
 is almost exactly the same as my own MacBook Pro except it's running the 

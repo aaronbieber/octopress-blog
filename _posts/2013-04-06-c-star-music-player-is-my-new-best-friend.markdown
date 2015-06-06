@@ -23,7 +23,7 @@ theme that now ships along with it (finally).
 You might be thinking, "Ugh, a terminal-based music player? How limiting." Not 
 so. What if I told you that you could have global keyboard shortcuts and Growl 
 notifications? Well, you can (at least in OS X). I'll tell you how.
-<!--more-->
+~~MORE~~
 
 _Full disclosure_: in order to get global hotkeys working in OS X, you need 
 the Alfred Powerpack, which is not free. Alfred is an amazing launcher 

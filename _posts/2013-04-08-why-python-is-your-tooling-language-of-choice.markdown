@@ -23,7 +23,7 @@ cleaning up after yourself (I'm talking about memory, I will assume that you
 bathe), and generally _acting predictably_, Python is, without a doubt, your 
 chosen language.
 
-Why? I'll tell you why.<!--more-->
+Why? I'll tell you why.~~MORE~~
 
 First off, Python, you've heard of it? I hope so. Python is interpreted but 
 bytecode compiled, and runs in its own "virtual machine" or "virtual 

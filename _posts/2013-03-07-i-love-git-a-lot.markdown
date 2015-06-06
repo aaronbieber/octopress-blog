@@ -19,7 +19,7 @@ start with a period? For a while I had been keeping the longer, more important
 ones on github.com, which is really helpful when using a new computer or 
 reinstalling your OS from scratch.
 
-Today, though, I took it to the next level. Want to know more?<!--more-->
+Today, though, I took it to the next level. Want to know more?~~MORE~~
 
 Maybe this isn't an Earth-shattering, life-changing revelation, but it 
 occurred to me that every time I clone this repository I wind up copying out 

@@ -22,7 +22,7 @@ shortcut and opens a one-line menu of programs in your path that is filtered
 as you type. The ultimate no-frills launcher.
 
 This is the story of how I finally got Xft (anti-aliased TrueType fonts) 
-working in dmenu. It makes it look amazing. Seriously.<!--more-->
+working in dmenu. It makes it look amazing. Seriously.~~MORE~~
 
 In order to get dmenu to use Xft, you need to patch the source and compile it. 
 Fortunately, the patch is provided for you. Download the dmenu source and the 

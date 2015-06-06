@@ -21,7 +21,7 @@ Don't let PHP's own reputation sully yours; don't let PHP itself typecast you.
 
 You are more than the language you use, or even prefer. Moreover, the language
 you use usually has very little to do with your success as an engineer, or even
-the success of any business using it. Let me give you some advice.<!--more-->
+the success of any business using it. Let me give you some advice.~~MORE~~
 
 First, PHP is not a bad language. It's a quirky language to be sure, but all
 languages have quirks. The last few minor versions of PHP have dramatically

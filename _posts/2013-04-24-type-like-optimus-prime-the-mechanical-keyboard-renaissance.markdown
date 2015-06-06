@@ -11,7 +11,7 @@ sentient robot. That's what your keyboard would be like if you had mechanical
 key switches in there. Maybe you already do and this is old hat; if that is 
 the case, move along. But if you want to learn about Cherry MX Blues and the 
 siren song of the Rosewills and the Leopolds, by all means, read on.
-<!--more-->
+~~MORE~~
 
 Most keyboards do not have mechanical key switches. The reason for this is 
 quite simple: mechanical key switches are more expensive to manufacture. 

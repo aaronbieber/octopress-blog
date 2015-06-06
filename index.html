@@ -13,9 +13,13 @@ layout: default
       </header>
 
       <div class="entry-content">{{ post.excerpt }}</div>
+
+      {% capture continuation %}{{ post | has_continuation }}{% endcapture %}
+      {% if continuation == 'true' %}
       <footer>
         <a rel="full-article" href="{{ root_url }}{{ post.url }}">Read on &#8594;</a>
       </footer>
+      {% endif %}
     </article>
   {% endfor %}
 

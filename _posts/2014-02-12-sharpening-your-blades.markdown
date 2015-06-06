@@ -16,7 +16,7 @@ We can learn much from these parallel concepts. In the same way that a builder
 must keep the blade of the saw sharp, so must a programmer focus some effort
 on sharpening the "blades" of his or her tools and techniques. This is not a
 post about education or learning new algorithms or solving ridiculous _code
-katas_ every day. This is a story about chainsaws.<!--more-->
+katas_ every day. This is a story about chainsaws.~~MORE~~
 
 I watched this talk by the inimitable Gary Bernhardt (some day I hope someone
 describes me as "inimitable") called "[The Unix Chainsaw][1]." Though the

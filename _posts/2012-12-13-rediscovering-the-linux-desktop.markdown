@@ -11,8 +11,7 @@ Windows-oriented, mostly due to the decisions of its President when it was
 founded, subsequent inertia, and the skillsets of the infrastructure teams. 
 Now, though, we have an increased Linux knowledgebase in-house, we’ve started 
 this reorientation toward PHP and other open-source products, and Linux just 
-makes more sense.
-<!--more-->
+makes more sense.~~MORE~~
 
 To help “grease the wheels” in the development process, we started toying with 
 Vagrant and Chef to spin up local development instances, which has been a 

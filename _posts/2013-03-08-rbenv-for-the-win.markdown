@@ -14,7 +14,7 @@ faced some challenges along the way while setting up this Octopress blog
 environment and have now gone through the motions on both my Mac laptop and 
 Linux desktop, I am going to take a few minutes to share my findings.
 
-If you have no interest in using Ruby, you can move along.<!--more-->
+If you have no interest in using Ruby, you can move along.~~MORE~~
 
 ## What is rbenv?
 

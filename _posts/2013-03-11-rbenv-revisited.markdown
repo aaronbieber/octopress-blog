@@ -10,7 +10,7 @@ A few days ago I wrote about my
 environment manager (is that what they call it?). My overall experience was 
 good, but I did encounter a couple of hiccups getting the "ruby-build" plugin 
 to work. While installing the whole kit once again on this cute new Ubuntu 
-laptop, I figured it out.<!--more-->
+laptop, I figured it out.~~MORE~~
 
 I shouldn't have been so audacious as to try to install Rbenv using `apt` 
 because, naturally, it isn't the latest version. When you run the `rbenv` 

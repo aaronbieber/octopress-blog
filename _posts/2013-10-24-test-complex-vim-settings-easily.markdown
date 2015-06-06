@@ -9,7 +9,7 @@ Have you ever wanted to test a new value for a complex Vim setting, like
 `comments`, and been annoyed at having to print out the setting, memorize its 
 value, and then type it back in? There are a couple of ways around this that 
 are much more convenient, but I'll show you a great trick for getting the 
-current value of a setting to work from.<!--more-->
+current value of a setting to work from.~~MORE~~
 
 As an example, let's stick with the `comments` setting, which tells Vim what 
 source code comments look like in various languages. A typical value for 
