@@ -1,7 +1,7 @@
 ---
 title: Why You Should Give ZSH Another Try
-layout: post
 date: 2013-11-19 18:32
+layout: post
 comments: true
 categories:
 ---
