@@ -53,7 +53,7 @@ nested ternary.
 
 Compare this mess...
 
-``` php
+```php
 <?php
 $show_heading_count = !empty($global_heading_count) ?
                       (int) $global_heading_count :
@@ -64,7 +64,7 @@ $show_heading_count = !empty($global_heading_count) ?
 
 To this:
 
-``` php
+```php
 <?php
 $show_heading_count = 6;
 if (!empty($global_heading_count)) {
@@ -119,9 +119,14 @@ Codesniffer rules themselves.
 Adhering to this style standard has, in no small way, made our large team more
 productive.
 
-## Performance Is a Journey ##
+## Performance Is Not a Destination ##
 
-Performance is not a destination, it is a journey.
+Performance is not a destination; you will never complete the task of making
+your application performant. When you work with only a few people, all of you
+will be equally aware of how you are impacting the performance of the system
+(unless you are all quite thoughtless). When you work with hundreds of people,
+each with their own deadlines and requirements, it is natural for performance to
+slip gradually unless everyone keeps an eye on it.
 
 ## Communication Is Critical ##
 
@@ -135,20 +140,20 @@ talk to one another and keep messy commit logs and don't write documentation and
 can't understand when to comment their code, the system they've written is going
 to be fractured and generally a pain in the ass to maintain.
 
-There are X ways that programmers communicate, and each one is essential:
+There are five major ways that programmers communicate, and each one is essential:
 
-1. Face-to-face.
-2. Through e-mail, chat, etc.
+1. Synchronously: face-to-face, chat, etc.
+2. Asynchronously: e-mail, mostly.
 3. In commit messages.
 4. By commenting the code itself.
-5. Through documentation, separate from the code.
+5. Through documentation separate from the code.
 
-Whether your organization prioritizes one or more of these specifically is not
-terribly important; distributed organizations may not be capable of true
-face-to-face communication, but chat is a reasonable stand-in. As long as humans
-are interacting, the code they write will generally work better together.
+Some organizations may prioritize one type of communication over another due to
+preference or necessity, but the thing to keep in mind is that when engineers
+talk to one another, especially between cross-functional groups, they make the
+product better. Never forget that **commit messages** and **comments** are
+at least as important as chats and e-mails for sharing knowledge about a system.
 
-* Standards are important.
-* Performance is a lifestyle.
-* Communication is critical, and communication takes many forms. (commit
-  messages, comments, e-mail and "meatspace" interactions)
+It strikes wrenching pain into my very core when I see *thoughtless commit
+messages*. Remember, these words are for posterity so try to exercise a little
+bit of pride.
