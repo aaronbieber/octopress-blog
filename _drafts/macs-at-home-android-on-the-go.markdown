@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Macs at Home, Android on the Go"
-date: 2015-06-03T20:19:32-04:00
+date: 2015-07-29T17:28:24-04:00
 ---
 
 I bought my first Apple computer in 2002. It was a Power Mac G4 and it cost me
@@ -34,7 +34,7 @@ complete without a list?
    at this point.
 3. There are no restrictions on installing and running _unsigned_ software.
 4. Jailbreaking is for losers.
- 
+
 Let's go one by one.
 
 ## Android Is (Mostly) Open Source ##
@@ -76,7 +76,7 @@ welcoming than iOS.
 
 For those of us who do want to build something ourselves, this is a powerful
 feature. Though Apple's impetus for requiring encryption keys and licensing fees
-is largely security-driven, which I can understand, you can develop and app for
+is largely security-driven, which I can understand, you can develop an app for
 Android and put it on your phone *today* for zero dollars.
 
 Apple requires a $99 ransom for a developer certificate to allow your (probably
@@ -109,4 +109,3 @@ their Android phones with sophisticated bootloader locks that prevent you from
 making changes to the system, but Google continues to maintain the line of Nexus
 phones that are guaranteed to be unlockable. It's as easy as booting into a
 special start-up menu and choosing "unlock my shit."
-
