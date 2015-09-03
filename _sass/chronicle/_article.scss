@@ -116,6 +116,10 @@ article {
     @extend .flex-content;
     @extend .basic-alignment;
     @include shadow-box;
+
+    @media only screen and (max-width: 768px) {
+      width: 40%;
+    }
   }
   video, .flash-video { margin: 0 auto 1.5em; }
   video { display: block; width: 100%; }
