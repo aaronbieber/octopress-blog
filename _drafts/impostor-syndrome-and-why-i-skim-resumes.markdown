@@ -3,10 +3,9 @@ layout: post
 title: "Impostor Syndrome and Why I Skim Resumes"
 ---
 
-I've been making a living writing software on the Internet for about 15 years
-now. In the past five or six years I've also had the privilege of interviewing
-perhaps a hundred candidates for various software engineering roles (maybe more;
-I don't really count).
+I've been making a living writing software for the Internet since 1999. I've
+also had the privilege of interviewing perhaps a hundred candidates for various
+software engineering roles (maybe more; I don't really count).
 
 First of all, a piece of advice: interview people. Don't do it alone the first
 couple of times---hopefully your employer won't even let you, if you never have
