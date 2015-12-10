@@ -6,7 +6,7 @@ date: 2015-07-29T17:28:24-04:00
 
 I bought my first Apple computer in 2002. It was a Power Mac G4 and it cost me
 more money than I am willing to admit. OS X had been out for about two years
-and, thanks to my experience running a Linux desktop exclusively for a few years
+and, owing to my experience running a Linux desktop exclusively for a few years
 prior, I immediately fell in love.
 
 In the years since, I've owned two "professional" Apple towers, a Mac Mini,
@@ -20,7 +20,7 @@ my fourth Android phone? And how do I sleep at night knowing that the ghost of
 Steve Jobs is most certainly haunting me as he does all of those disloyal to his
 empire? Because Android is a better operating system for nerds. ~~MORE~~
 
-I can read your mind. _Better for nerds? What does that even mean?_ Simply, if
+You're thinking, _Better for nerds? What does that even mean?_ Simply, if
 you're a person who enjoys the process of tailoring and trimming the tools and
 devices in your life to be absolutely perfect, and who will willingly, if not
 enthusiastically, climb steep learning curves to get things _just right_,
@@ -41,22 +41,18 @@ Let's go one by one.
 
 The Android operating system itself is open source. Google has increasingly
 moved its own resources into the ambiguous "Google Play Services" application,
-which is closed-source and has special privileges, which has been a cause for
-some contention among the software freedom advocates of the world, but since the
-majority of the OS remains in the public view, it is still possible for
-individuals to create derivative versions.
+which is closed-source and has special privileges, to the great chagrin of free
+software supporters everywhere, but since the majority of the OS remains in the
+public view, it is still possible for individuals to create derivative versions.
 
-Among those are the very popular "Cyanogenmod," which is the flavor that ships
-with the OnePlus One handset as well as the various and sundry (and to my mind,
-mostly gross) carrier-specific Android distributions. There is only one version
-of iOS; take it or leave it.
+Among those derivatives are the very popular "Cyanogenmod" as well as the
+various and sundry (and to my mind, mostly gross) carrier-specific Android
+distributions. There is only one version of iOS; take it or leave it.
 
 Why do you care? Because competition, no matter how tethered to Google's
 ecosystem they may be required to be, is good for the consumer. Moreover, if you
 are quite intrepid and have a phone that can be unlocked (such as the official
-Nexus handsets), you can run any of a vast number of Android derivatives. I,
-myself, ran AOKP (Android Open Kang Project) for over a year and loved many of
-its unique features.
+Nexus handsets), you can run any of a vast number of Android derivatives.
 
 Choice is good.
 
@@ -67,7 +63,7 @@ platforms are only as successful as their app ecosystems, which makes a polished
 and easy-to-use SDK par for the course. Nevertheless, it bears mentioning that
 since Android dropped their customized Eclipse environment in favor of an
 equally tweaked IntelliJ front-end, the Android development experience is a lot
-closer to the fit and finish of Apple's X Code Tools.
+closer to the fit and finish of Apple's XCode Tools.
 
 If you want to develop your own apps and tools, Android should be no less
 welcoming than iOS.
@@ -81,11 +77,11 @@ Android and put it on your phone *today* for zero dollars.
 
 Apple requires a $99 ransom for a developer certificate to allow your (probably
 unfinished) software to run on your own physical device. Sure, the iOS emulator
-that comes for free with X Code Tools is really swell, but if you are just a guy
+that comes for free with XCode Tools is really swell, but if you are just a guy
 who wants to build a tool or app for his own use (I'm a guy like that), you
-still have to toss about a hundred bucks into Steve Jobs' donation plate for the
-privilege of running it on _your own phone_. Even if you never try to sell it,
-or even give it away.
+still have to toss about a hundred bucks into Steve Jobs' donation basket for
+the privilege of running it on _your own phone_. Even if you never try to sell
+it, or even give it away.
 
 Moreover, you can only install and run other software similarly blessed with a
 proper certificate for which its author paid a crisp, electronic Benjamin. What
@@ -96,7 +92,7 @@ does this mean for you, the common nerd? Well...
    likely to ask *you* for cash to download it, or put some shitty pay gates
    inside of it. We live in the age of the freemium model.
 2. You can't install software from outside of the App Store unless you jailbreak
-   your phone. More on this later.
+   your phone. Speaking of which...
 
 ## Jailbreaking Is For Losers ##
 
