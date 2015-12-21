@@ -34,6 +34,16 @@ contradict its patterns.~~MORE~~
   language, you will discover ways of expressing approaches to problems that you
   hadn't thought of before.
 
+- LISP
+  - OO promises an organization methodology that forces developers to make
+    coherent design decisions
+  - But it doesn't, really
+  - Storage and memory are cheap now, by comparison; hard to make a case for
+    memory efficiency of class autoloading over simplicity of functions with
+    clean interfaces
+  - Some languages do have function autoloading so even that doesn't matter
+  - Functional design can also get messy once you have a global scope
+  - Global scope is a more obvious code smell
 
 Linguistic relativity is a controversial subject and, scientifically speaking, a
 hypothesis at best. Nevertheless, the notion that your way of thinking about the
@@ -41,10 +51,10 @@ world is directly influenced by the framework through which you express it is of
 great interest to me and the idea seemed to dovetail with things I have observed
 in the software engineering world.
 
-The often-used example of linguistic relativity in the world is that of the
-Pirahã people of the Amazon Rainforest. Their language lacks the ability to
-express numbers, colors, person, or tense; as a hunter-gatherer group, these
-limitations are of pure necessity.
+The often-used example of linguistic relativity is that of the Pirahã people of
+the Amazon Rainforest. Their language lacks the ability to express numbers,
+colors, person, or tense; as a hunter-gatherer group, these limitations are
+emergent.
 
 Researchers have concluded that the Pirahã people are *cognitively* capable of
 counting, but they aren't able to perform even the most basic arithmetic nor
@@ -63,11 +73,15 @@ the contrary, it is often quite useful. Still, to write very extensible and
 stable object oriented code, one must sometimes break through the conceptual
 barriers created by it, which is what I will attempt to demonstrate here.
 
-Before I dig into examples you're probably wondering if this is a purely
+Before I dig into examples, you're probably wondering if this is a purely
 hypothetical exercise. Who does this potentially affect? According to
 [this analysis][acm], published in Communications of the ACM, Java is still the
 second most popular teaching language at Ph.D.-granting colleges and
-universities.
+universities, so it stands to reason that there are many young people receiving
+introductory computer science instruction in a nearly exclusively object
+oriented fashion who may suffer from the effects I will discuss here.
 
 [acm]: http://goo.gl/ivF6Hi
 
+Global scope is bad, usually. When your system hinges on a state that is
+in constant flux and can be altered unexpectedly, bugs emerge.
