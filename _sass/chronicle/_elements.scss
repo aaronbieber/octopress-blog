@@ -21,10 +21,12 @@ $img-border: inline-image('dotted-border.png') !default;
 
   @media only screen and (min-width: 768px) {
     &:before {
-      content: "\27A5";
+      content: "*";
       position: absolute;
-      font-size: 2em;
+      font-size: 4em;
+      line-height: 1em;
       left: 15px;
+      color: gold;
     }
   }
 }
