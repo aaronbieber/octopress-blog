@@ -34,3 +34,17 @@ Org will then use those keywords when working on that file. It's up to you how
 you want to set them. You can also have multiple sets of task keywords in the
 same file, but I haven't found a need for that yet so I won't talk about it
 here.
+
+I use the keywords above, but your workflow is probably different so you may
+want more or fewer states. There is also a way to have multiple "done" states
+(such as "CANCELED") so that Org knows that a task no longer requires your
+attention, but it isn't marked strictly as "done." There is an annotation format
+for that, which is covered in [Workflow states][wfs] in the Org manual.
+
+[wfs]: (http://orgmode.org/manual/Workflow-states.html#Workflow-states)
+
+## Define Your Files ##
+
+Org can manage multiple separate files. Right now, I keep my personal stuff in a
+file named `home.org`, my work stuff in a file appropriately named `work.org`,
+and I capture new items into a notes file named `notes.org`.
