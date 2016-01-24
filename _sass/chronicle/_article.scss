@@ -20,7 +20,7 @@ article {
       font-weight: 500;
       a {
         text-decoration: none;
-        &:hover { text-decoration: underline; }
+        &:hover { text-decoration: none; }
       }
     }
     p {
@@ -46,16 +46,9 @@ article {
     em {
       font-style: italic;
     }
+
     strong {
       font-weight: bold;
-    }
-    a {
-      @include border-radius(4px);
-      @include transition(background-color .3s, padding .3s);
-      &:hover {
-        background-color: #dedede;
-        padding: 0 0.3em 0;
-      }
     }
 
     ol {
