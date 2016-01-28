@@ -255,9 +255,52 @@ work better for you, and since Org is such a monster, there is almost always
 some configuration you can tweak to fix it. These are the tweaks I have found
 that work for me and their descriptions:
 
+~~~cl
 (setq org-agenda-text-search-extra-files '(agenda-archives))
+~~~
+
+When you perform a text search (the "s" selection from the `org-agenda` pop-up),
+include the archives for all of the files in Org's agenda files list. If you
+archive things regularly, which I do, this helps you dig stuff out of there when
+you're looking for it.
+
+~~~cl
 (setq org-blank-before-new-entry (quote ((heading) (plain-list-item))))
+~~~
+
+I tend to leave a blank line at the end of the content of each task entry. This
+causes Org to automatically place a blank line before a new heading or plain
+text list item, just the way I like it.
+
+~~~cl
 (setq org-enforce-todo-dependencies t)
+~~~
+
+This one is pretty awesome; it forces you to mark all child tasks as "DONE"
+before you can mark the parent as "DONE." The agenda view already has the notion
+of "blocked" tasks (those with incomplete child tasks), which should appear
+dimmed (that, of course, is also customizable). This makes it even harder to
+slack off on your work.
+
+~~~cl
 (setq org-log-done (quote time))
+~~~
+
+I like to know when tasks have changed status. Setting this option causes Org to
+insert an annotation in a task when it is marked as done including a timestamp
+of when exactly that happened.
+
+~~~cl
 (setq org-log-redeadline (quote time))
+~~~
+
+Adding yet further auditing, this option causes Org to insert annotations when
+you change the deadline of a task, which will note the previous deadline date
+and when it was changed. Very useful for figuring out how many times you "kicked
+the can down the road."
+
+~~~cl
 (setq org-log-reschedule (quote time))
+~~~
+
+This does the same as above, but for the scheduled dates, which I use more often.
