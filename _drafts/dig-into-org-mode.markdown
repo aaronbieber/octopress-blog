@@ -50,7 +50,7 @@ The observant among you will notice three things about this configuration:
 If you wish to configure your task states differently in each Org file, you can
 use a line like this at the top (the syntax, including the pipe, is the same):
 
-~~~
+~~~cl
 #+TODO: TODO IN-PROGRESS WAITING | DONE CANCELED
 ~~~
 
