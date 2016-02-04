@@ -4,6 +4,8 @@ title: "Dig Into Org Mode"
 date: 2016-01-30T15:59:04-05:00
 ---
 
+{% img noborder /images/uploads/dig-into-org-mode/screenshot.png %}
+
 Org mode was one of the main reasons I tried Emacs (and left behind 15 years of
 Vim), and now it is a central part of how I organize my work. Org mode can help
 you take notes, track tasks, build agendas, process tabular data, and more. It's
