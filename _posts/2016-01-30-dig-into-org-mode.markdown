@@ -117,7 +117,7 @@ assigned it to a key binding:
   (org-agenda-list)
   (when (not split)
     (delete-other-windows)))
-    
+
 (define-key global-map (kbd "C-c t a") 'air-pop-to-org-agenda)
 ~~~
 
