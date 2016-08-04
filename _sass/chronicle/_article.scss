@@ -110,6 +110,10 @@ article {
     @extend .basic-alignment;
     @include shadow-box;
   }
+  img {
+    display: block;
+    margin: 0 auto;
+  }
   img.noborder {
     border: none;
     box-shadow: none;
