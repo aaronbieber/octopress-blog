@@ -1,23 +1,24 @@
 ---
 layout: post
 title: "What Is Good Software?"
+date: 2016-08-06T10:06:54-04:00
 tags: emacs vim software
 ---
 
 I'm an opinionated software engineer. I have strongly held beliefs about what
 makes a program good or bad (as I imagine most programmers do) but as a Vim user
-for 15 years and now as an outspoken advocate for Emacs, I'm on the front lines
-of a turf war that shows no signs of calming.
+for 15 years who changed camps to Emacs, I'm on the front lines of a turf war
+that shows no signs of calming.
 
 <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr"><a href="https://twitter.com/aaronbieber">@aaronbieber</a> That doesn&#39;t mean he was wrong :-) Both code bases are pretty horrendous if you look, I&#39;m not sure either is good software.</p>&mdash; Michael Ellerman (@michaelellerman) <a href="https://twitter.com/michaelellerman/status/720587685597872129">April 14, 2016</a></blockquote>
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-Because 140 characters is barely enough to state the entirety of my opinion, let
-alone its justification, here is a post on the subject.~~MORE~~
+I believe strongly that "good software" is that which is fit for its intended
+purpose, and that has both benevolent maintainership and a strong
+community. Because there is nuance of interpretation in these words, I decided
+to write more.
 
-The crux of my opinion is that there is a difference between the objective
-*code quality* of a piece of software and its *fitness for a particular
-purpose*, to borrow the oft-used phrase from disclaimers.
+Fair warning: this post is long.~~MORE~~
 
 When I say that Emacs is "better software" than Vim, I am not only remarking on
 the well-known instances of [total insanity][insanity] in Vim's codebase, but
@@ -26,6 +27,8 @@ even in the face of broad and vehement user support and its uncertain future as
 a project owing to its sole maintainer's neglect of organizational foresight.
 
 [insanity]: http://geoff.greer.fm/vim/
+
+Let's examine the strongest concrete example in recent events.
 
 ## The Quest for Background Processing ##
 
@@ -115,18 +118,22 @@ implies that he has no interest in sharing that responsibility with the vibrant
 community that grew around his project.
 
 In contrast, the Emacs project has changed maintainers no fewer than two times
-since Richard Stallman's reign. Not only is this a testament to the breadth of
-the Emacs community, that we could find not one, and not even two, but three
-qualified and motivated individuals to steer the project toward its community's
-common goals, but indeed a sign of the project's health. We have nothing to fear
-from the passing of time knowing that the Emacs project possesses the ability to
-pass the baton quite effectively should it become necessary.
+since Richard Stallman wrote the program originally. Not only is this a
+testament to the breadth of the Emacs community, that we could find not one, and
+not even two, but three qualified and motivated individuals to steer the project
+toward its community's common goals, but indeed a sign of the project's
+health. We can sleep easily knowing that the Emacs project possesses the ability
+to pass the baton quite effectively should it become necessary.
 
 When Bram Moolenaar is no longer maintaining Vim, for whatever reason, who will
 step up to the plate? Who will vet them? How will the community organize itself?
 Bram has not taken any steps to build a community ecosystem around his project
 and when the day comes that he is no longer in control, we can only guess at
 what may happen.
+
+My prediction is that Vim development will slow to a crawl, ultimately doing
+nothing more than keeping up with security and stability patches, and that
+NeoVim will become the _de facto_ standard for the general public.
 
 ## Extensibility Wins the Day ##
 
@@ -139,8 +146,8 @@ all, of the disparities between these projects.
 Vim is extensible through modification of its C code and through scripting in
 its built-in programming language called, officially or unofficially,
 VimL. Emacs is extensible through modification of its C code and through
-scripting in its built-in programming called Emacs Lisp, a variant of Common
-Lisp.
+scripting in its built-in programming language called Emacs Lisp, a slimmer
+variant of Common Lisp.
 
 Comparing VimL to Emacs Lisp is hardly fair; one is essentially an eccentric and
 fairly limited DSL with demonstrable performance concerns, and the other is a
@@ -160,6 +167,21 @@ its flexibility can be almost comical when wielded without reason, but you only
 need to struggle with the desire to change some simple key mapping behavior or
 margin drawing functionality in Vim for a few hours before you start to
 appreciate the judicious application of hooks into lower-level functions.
+
+The net effect of this is that the core maintainers of Emacs can refuse to
+implement certain features and, for the most part, the community can step in and
+do it themselves. Because VimL's capabilities are much more limited, features
+like job management have taken years to make it into the hands of users.
+
+<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr"><a href="https://twitter.com/aaronbieber">@aaronbieber</a> But emacs has only had evil mode for ~5 (?) years, so they&#39;re basically even.</p>&mdash; Michael Ellerman (@michaelellerman) <a href="https://twitter.com/michaelellerman/status/720534735781552128">April 14, 2016</a></blockquote>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+What Michael says above is true, but the difference is that Evil Mode is
+implemented in pure Emacs Lisp and did not need the blessing of the project's
+maintainers to get into the hands of its users. The timeline is coincidental;
+Evil Mode could have been created at any time. Vim 8's new features had to wait
+until Bram could see far enough beyond his crippling hubris to descent from
+Mount Olympus with a patch in his hands.
 
 In conclusion, great software is defined by more than its objective code
 quality; I would even go so far as to say that code quality is one of the least
