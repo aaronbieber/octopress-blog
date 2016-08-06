@@ -34,6 +34,9 @@ $img-border: inline-image('dotted-border.png') !default;
 }
 
 /* For embedded Twitter tweets */
-iframe.twitter-tweet {
+iframe.twitter-tweet,
+twitterwidget {
   margin: 0 auto;
+  margin-top: 1.5em !important;
+  margin-bottom: 1.5em !important;
 }
