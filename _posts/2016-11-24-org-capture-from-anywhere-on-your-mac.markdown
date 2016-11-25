@@ -1,8 +1,8 @@
 ---
 layout: post
 title: "Org Capture From Anywhere on Your Mac"
+date: 2016-11-24T08:57:24-05:00
 ---
-
 
 I'm going to show you how you can create a "bookmarklet" button in your browser
 that will capture a note or link directly into Org Mode in your running
@@ -55,6 +55,8 @@ Let's get started.
 
 ## Build a Protocol Handler ##
 
+[{% img noborder left /images/uploads/applescript-icon.png %}][oph]
+
 The code necessary to implement a system-level protocol handler in OS X is
 surprisingly simple, especially if you write it in AppleScript. Any application
 package whose `Info.plist` defines a "URL scheme" you want to respond to and
@@ -75,9 +77,14 @@ already exist, but I wrote my own for three reasons:
 
 [oph]: https://github.com/aaronbieber/org-protocol-handler
 
-The README within this project explains how to install and configure the
-protocol handler application. Essentially, edit the path to `emacsclient` if
-necessary and drop the application itself into `/Applications`. That's it.
+The README within the project explains how to install and configure the protocol
+handler application. Essentially, edit the path to `emacsclient` if necessary
+and drop the application itself into `/Applications`. That's it.
+
+If you use terminal Emacs it should work just fine, but when you trigger a
+capture, the script will not be able to give Emacs the focus because it's inside
+of some terminal somewhere that AppleScript can't see. I recommend using GUI
+Emacs for many other reasons, but this is another good one.
 
 ## Configure Emacs ##
 
@@ -89,8 +96,10 @@ and pay special attention to the following details:
 
 1. The `org-protocol` package should be included with your distribution of Org
    Mode, so you don't need to install anything.
+
 2. You do need to `(require 'org-protocol)`, because that package isn't loaded
    by default, and finally
+
 3. You need to have the Emacs server running.
 
 I have added `(server-start)` to my init file so that the Emacs server is always
@@ -109,10 +118,12 @@ Before getting into capture templates, let's get a simple bookmarklet working.
 To store a link for later insertion into an Org file, I use this bookmarklet:
 
 ```
-javascript:location.href='org-protocol://store-link://'
+javascript:(function () {
+  window.location.href='org-protocol://store-link://'
     +encodeURIComponent(location.href)+'/'
     +encodeURIComponent(document.title)+'/'
     +encodeURIComponent(window.getSelection())
+})();
 ```
 
 {% infobox %}
@@ -135,3 +146,89 @@ item should be the URL of the page you were viewing when you pressed the
 bookmark button! If not, you screwed something up!
 
 ## Capturing Notes ##
+
+Capture is where things start to get interesting. The URL scheme for capturing a
+new Org element is:
+
+`org-protocol://capture://<Template>/<URL>/<Title>/<Text (optional)>`
+
+The value of `<Template>` is the template "key" pointing to a specific template
+defined in `org-capture-templates`. You can read about how to configure a
+capture template in the Org Mode manual under [Capture Templates][om-ct].
+
+[om-ct]: http://orgmode.org/manual/Capture-templates.html
+
+Org Mode will open a capture window using the template indicated when this URL
+is sent through `emacsclient`. The net effect is that you can use a special
+template for these captures that contains placeholders for the interactive link,
+page title, and selected text.
+
+Because Org Mode capture templates also specify the destination of the new
+entry, you can use this to capture general notes, make a list of sites for
+reading later, or anything else you can think of, just by changing the target
+template key in the bookmarklet.
+
+Read more about this in the [Org Protocol capture templates docs][op-ct]
+
+[op-ct]: http://orgmode.org/worg/org-contrib/org-protocol.html#orgheadline20
+
+OK, let's get this thing working.
+
+### The Capture Template ###
+
+I'm using a template designed to save links for later reading. It looks like
+this (this is what it would look like if it was my only template, which it
+isn't; the variable can contain multiple templates like this):
+
+```cl
+(setq org-capture-templates
+      '(("l" "A link, for reading later." entry
+         (file+headline "notes.org" "Reading List")
+         "* %:description\n%u\n\n%c\n\n%i"
+         :empty-lines 1)))
+```
+
+The key for this template is the letter "l" (that's lowercase "L", for
+"link"). It is a new "entry" and should be added under the "Reading List"
+headline in "notes.org."
+
+The important part is the format string. You can make use of some placeholder
+values for URL captures:
+
+* `%c` is the interactive link to the captured page
+
+* `%i` is the selected text, if any
+
+* `%:description` contains the plain text title of the page
+
+In this template I am also using `%u`, which is an inactive timestamp. Various
+other standard placeholder values are defined in the Org Mode documentation for
+capture templates.
+
+So now that we have a capture template, we can send a capture URL to
+`emacsclient` with a bookmarklet like this:
+
+```
+javascript:(function () {
+  window.location.href='org-protocol://capture://l/'
+    +encodeURIComponent(window.location.href)+'/'
+    +encodeURIComponent(document.title)+'/'
+    +encodeURIComponent(window.getSelection());
+})();
+```
+
+Open some webpage of your choice, maybe select some text on the page, and hit
+this bookmarklet. Hopefully Emacs will come to the front with a capture window
+open, ready for you to tweak or edit the new entry and commit it to your notes!
+
+## Conclusions ##
+
+This is one of the most sophisticated things I've done with Emacs so far. This
+functionality ties together OS-level protocol handling, custom AppleScript, and
+Org Mode configuration to create a way for programs I use all the time to talk
+to each other and make my life easier.
+
+If you came away from this scratching your head, or if you use Windows and
+figured out how to make this work there, please leave comments below!
+
+And if you're in the US or Canada, happy Thanksgiving!
