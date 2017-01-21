@@ -210,6 +210,40 @@ anything like Vundle or Neobundle or Pathogen, all you need to do is call
 `package-install` on every package that isn't yet installed. This is easy to
 write in Elisp.
 
+**Update (December, 2016)**: I no longer recommend manually hacking this package
+stuff into your config as shown down below (preserved for posterity). Instead, I
+recommend using the awesome `use-package` package by John Wiegley.
+
+You must first set up your `package.el` configuration as you would in any case
+(by configuring the repositories you would like to use, and so forth), but then
+you can bootstrap the whole system with this simple snippet:
+
+```cl
+(unless (package-installed-p 'use-package)
+  (package-refresh-contents)
+  (package-install 'use-package))
+
+(eval-when-compile
+  (require 'use-package))
+```
+
+Then configure all of your packages using `use-package` forms as described in
+[the documentation](https://github.com/jwiegley/use-package). Any package with
+the keyword `:ensure` set to `t` will be downloaded from a remote repository.
+
+The simplest example is something like:
+
+```cl
+(use-package markdown-mode
+  :ensure t)
+```
+
+The `use-package` system is capable of a whole lot more, and it's allowed me to
+clean up and modularize most of my configuration while also optimize my Emacs
+startup time. I strongly recommend giving it a shot.
+
+**Deprecated advice below**, continue at your own peril.
+
 There are several ways to do this, but the simplest seems to be [this Stack
 Overflow answer](http://stackoverflow.com/a/10095853/580206):
 
