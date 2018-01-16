@@ -46,7 +46,7 @@ As I noted in [Dig into Org Mode][dig-in], I build my agenda from all of the Org
 files in my "org" directory in Dropbox. Specifying a single directory is the
 easiest thing you can do:
 
-[dig-in]: {% post_url 2016-01-30-dig-into-org-mode %})
+[dig-in]: {% post_url 2016-01-30-dig-into-org-mode %}
 
 ~~~cl
 (setq org-agenda-files '("~/Dropbox/org/"))

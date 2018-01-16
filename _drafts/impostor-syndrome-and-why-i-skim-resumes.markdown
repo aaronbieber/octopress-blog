@@ -43,6 +43,7 @@ Unfortunately for those candidates, there are two facts standing in their way:
    majority of programming candidates have CS degrees and therefore, as dictated
    by the forces of nature, their skill levels can be expressed as a log normal
    distribution (a "bell curve," if you want).
+
 2. Computer science curricula, with few exceptions, doesn't teach everything
    that I require from a software engineering candidate.
 
