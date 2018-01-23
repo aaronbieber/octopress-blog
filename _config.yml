@@ -19,6 +19,7 @@ date_format_short: "%B %d, %Y"
 date_format_long: "%B %d, %Y"
 disqus_short_name: aaronbieber
 highlighter: rouge
+exclude: [vendor]
 
 defaults:
   -
@@ -46,4 +47,4 @@ gems:
 
 sass:
   load_paths:
-    - "../.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/"
+    - "./vendor/bundle/ruby/2.3.0/gems/compass-core-1.0.3/stylesheets/"
