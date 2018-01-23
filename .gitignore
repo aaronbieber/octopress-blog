@@ -2,3 +2,5 @@ _site
 _deploy.yml
 .sass-cache
 Gemfile.lock
+.bundle
+vendor
