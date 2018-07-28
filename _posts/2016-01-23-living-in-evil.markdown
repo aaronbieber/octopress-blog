@@ -51,10 +51,13 @@ Here I'm just calling `evil-mode` to activate it, because I want it to be
 turned on globally, all the time.
 
 So the first thing I do in my own configuration is load four more packages that
-rely on Evil: `evil-leader`, `evil-jumper`, `evil-surround`, and
+rely on Evil: `evil-leader`, `evil-surround`, and
 `evil-indent-textobject`. Because there is no sense in loading these if Evil
 isn't loaded, I nest their `use-package` calls within Evil's `:config`
 section. So now we have something like this:
+
+(NB: `evil-jumper` was merged into `evil-mode` itself in 2016, so you don't need
+to install that package any longer.)
 
 ```cl
 (use-package evil
@@ -66,11 +69,6 @@ section. So now we have something like this:
     :ensure t
     :config
     (global-evil-leader-mode))
-
-  (use-package evil-jumper
-    :ensure t
-    :config
-    (global-evil-jumper-mode))
 
   (use-package evil-surround
     :ensure t
