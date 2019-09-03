@@ -18,7 +18,7 @@ are drawn in by its extensive capacity to be customized and overlook the
 process of building up muscle memory for the myriad of movement commands and 
 Vim grammar that make it so awesome.
 
-[2]: http://usevim.com/2013/02/20/configuration/
+[2]: https://medium.com/usevim/stop-the-vim-configuration-madness-c825578bbf3e
 
 In a similar vein, Ian Langworth looks back on 11 years with Vim and points 
 out some of his favorite configuration tricks and plug-ins in his article
