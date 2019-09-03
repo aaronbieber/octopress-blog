@@ -45,6 +45,9 @@ gems:
   - rouge
   - jekyll-compass
 
+# You will probably have to modify this path for your local configuration
+# and I don't know any way around that, because, uh, this whole stack is
+# essentially deprecated, so good luck.
 sass:
   load_paths:
-    - "./vendor/bundle/ruby/2.3.0/gems/compass-core-1.0.3/stylesheets/"
+    - "/home/airborne/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/"
